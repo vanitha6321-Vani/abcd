@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Form</title>
+<style>
+body{
+  font-family: Arial;
+  background:#667eea;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+form{
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  width:300px;
+}
+input, button{
+  width:100%;
+  padding:10px;
+  margin:8px 0;
+}
+button{
+  background:#04AA6D;
+  color:white;
+  border:none;
+}
+</style>
+</head>
+<body>
+
+<form action="https://formsubmit.co/vanitha6321@gmail.com" method="POST">
+  <h2>Contact Form</h2>
+
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <input type="text" name="message" placeholder="Message" required>
+
+  <button type="submit">Submit</button>
+</form>
+<form action="sendmail.php" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <button type="submit">Submit</button>
+</form>
+
+
+</body>
+</html>
